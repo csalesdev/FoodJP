@@ -1,0 +1,225 @@
+$cor-primaria: #FF0000;
+$text-color: #232323;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@mixin flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Koh Santepheap", sans-serif;
+    margin: 0% 25% 0% 25%;
+}
+
+header {
+    @include flexbox();
+    height: 10vh;
+    margin-bottom: 5%;
+
+    ul {
+        @include flexbox();
+        list-style: none;
+        width: 15vw;
+
+        li {
+            font-weight: 500;
+            font-size: 15px
+        }
+    }
+    
+}
+
+main {
+    
+    section {
+        @include flexbox();
+        padding-bottom: 10%;
+
+        .cardapio_b {
+            margin-top: 20px;
+        }
+    }
+    h5 {
+        font-size: 20px;
+        font-weight: 400;
+        color: $cor-primaria;
+        padding-bottom: 10px;
+    }
+    h2 {
+        font-weight:400;
+        font-size: 30px;
+
+        color: $text-color;
+        line-height: 35px;
+    }
+    p {
+        font-family: "Popins", sans-serif;
+        color: $text-color;
+        line-height: 2vh;
+    }
+    .img1 {
+        width: 300px;
+    }
+    .img2 {
+        width: 450px;
+    }
+    
+    #h2 {
+        text-align: center;
+        padding-bottom: 125px
+    }
+
+    .main_section3 {
+        @include flexbox();
+
+        section {
+            justify-content: space-between;
+            @include flexbox();
+        }
+        
+        .card {
+            @include flexbox();
+            background-color: #F8F5F2;
+            width: 15vw;
+            height: 32.5vh;
+            top: 1678px;
+            left: 1184px;
+            border-radius: 16px;
+            text-align: center;
+
+            div {
+                @include flexbox();
+                margin-top: -6vh;
+            }
+
+            p {
+                width: 90%;
+                font-size: 0.85rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+                padding-bottom: 15px;
+            }
+
+            img {
+                position: relative;
+                bottom: 85px;
+                width: 75%;
+            }
+
+            h5 {
+                padding-top: 10px;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    
+    .main_section4 {
+        justify-content: space-between;
+
+        .card_2 {
+            @include flexbox();
+            align-items: flex-start;
+            background-color: #F8F5F2;
+            width: 24.5vw;
+            height: 32vh;
+            top: 2346px;
+            left: 976px;
+            gap: 20px;
+            border-radius: 16px;
+            padding: 2.5%;
+
+            img {
+                width: 20%;
+            }
+
+            .star {
+                width: 30%;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1.2rem
+            }
+        }
+    }
+}
+
+footer {
+
+.footer_section1 {
+    @include flexbox();
+    padding-bottom: 5%;
+
+    
+    }   
+    }
+    div {
+        flex-direction: column;
+
+        p {
+            font-family: "Poppins", sans-serif;
+            padding-bottom: 10px;
+        }
+
+        nav {
+            @include flexbox();
+            flex-direction: column;
+            align-items: start;
+
+
+            a {
+                padding-bottom: 10px;
+                text-decoration: none;
+                color: $text-color;
+            }
+        }
+    }
+    .footer_section2 {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        @include flexbox ();
+
+        h2 {
+            font-family: "Poppins", sans-serif;
+        }
+}
+
+
+button {
+    font-family: "Poppins", sans-serif;
+    color: #F8F5F2;
+    background-color: $cor-primaria;
+    border: none;
+    width: 7vw;
+    height: 3.5vh;
+    border-radius: 50px;
+}
+
+.divider {
+    background: #F8F5F2;
+    border-top: 1px solid #F8F5F2;
+}
+
+.h2 {
+    padding-bottom: 25px;
+}
+
+#h2_comments {
+    text-align: center;
+    padding-bottom: 50px;
+}
