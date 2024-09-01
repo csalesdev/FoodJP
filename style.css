@@ -7,7 +7,7 @@
 
 body {
   font-family: "Koh Santepheap", sans-serif;
-  margin: 0% 25% 0% 25%;
+  margin: 0vw 50vh 0vw 50vh;
 }
 
 header {
@@ -28,6 +28,11 @@ header ul li {
   font-weight: 500;
   font-size: 15px;
 }
+header ul a {
+  font-family: "Poppins", sans-serif;
+  color: #232323;
+  text-decoration: none;
+}
 
 main section {
   display: flex;
@@ -37,6 +42,14 @@ main section {
 }
 main section .cardapio_b {
   margin-top: 20px;
+}
+main section p {
+  width: 400px;
+  line-height: 25px;
+}
+main .main_section2 p {
+  width: 410px;
+  line-height: 25px;
 }
 main h5 {
   font-size: 20px;
@@ -81,10 +94,8 @@ main .main_section3 .card {
   justify-content: space-between;
   align-items: center;
   background-color: #F8F5F2;
-  width: 15vw;
-  height: 32.5vh;
-  top: 1678px;
-  left: 1184px;
+  width: 300px;
+  height: 325px;
   border-radius: 16px;
   text-align: center;
 }
@@ -121,9 +132,7 @@ main .main_section4 .card_2 {
   align-items: flex-start;
   background-color: #F8F5F2;
   width: 24.5vw;
-  height: 32vh;
-  top: 2346px;
-  left: 976px;
+  height: 35vh;
   gap: 20px;
   border-radius: 16px;
   padding: 2.5%;
@@ -139,6 +148,7 @@ main .main_section4 .card_2 h2 {
 }
 main .main_section4 .card_2 p {
   font-size: 1.2rem;
+  line-height: 35px;
 }
 
 footer .footer_section1 {
@@ -178,6 +188,12 @@ div nav a {
 .footer_section2 h2 {
   font-family: "Poppins", sans-serif;
 }
+.footer_section2 nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
 
 button {
   font-family: "Poppins", sans-serif;
@@ -201,4 +217,89 @@ button {
 #h2_comments {
   text-align: center;
   padding-bottom: 50px;
+}
+
+@media (max-width: 480px) {
+  body {
+    margin: 0px 10px 0px 10px;
+  }
+  header > img {
+    width: 25%;
+  }
+  header > nav > ul {
+    display: block;
+    text-align: center;
+    width: 200px;
+  }
+  button {
+    width: 100%;
+  }
+  main .main_section1 {
+    padding-top: 20px;
+  }
+  main .main_section1 div {
+    width: 50%;
+  }
+  main .main_section1 div p {
+    width: 220px;
+  }
+  main .main_section1 div h2 {
+    width: 300px;
+  }
+  main .main_section1 .img1 {
+    width: 45%;
+  }
+  main .main_section2 {
+    margin-top: -60px;
+    margin-bottom: 30px;
+    display: block;
+  }
+  main .main_section2 img {
+    position: relative;
+    top: 120px;
+    width: 35%;
+  }
+  main .main_section2 div {
+    width: 100%;
+  }
+  main .main_section2 div h2 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  main .main_section2 div h5 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  main #h2 {
+    padding-bottom: 100px;
+  }
+  main .main_section3 .card {
+    width: 130px;
+    height: 300px;
+  }
+  main .main_section3 .card h2 {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  main .main_section3 .card img {
+    bottom: 40px;
+  }
+  main .main_section3 .card h5 {
+    padding-top: 0;
+  }
+  main .main_section4 {
+    display: block;
+    justify-content: space-between;
+  }
+  main .main_section4 .card_2 {
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px;
+  }
+  .footer_section2 img {
+    width: 30%;
+  }
+  .footer_section2 nav > a > img {
+    width: 80%;
+  }
 }/*# sourceMappingURL=style.css.map */
